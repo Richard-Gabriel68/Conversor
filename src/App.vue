@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Init moedaA="BRL" moedaB="USD" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Init from './components/Conversor.vue'
+//import axios from 'axios'
 
 export default {
   name: 'App',
+  data() {
+    return {
+      nome: 'Richard'
+    }
+  },
   components: {
-    HelloWorld
+    Init
   }
 }
 </script>
@@ -23,6 +28,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 </style>
